@@ -6,9 +6,19 @@ Instructeurs: Frédéric Bonou, Nourdi Njutapvoui
 
 ## Contenu de la session
 
-Cette session couvre le suivi des processus côtiers, les indicateurs de vulnérabilité climatique et un workflow léger de machine learning pour les dynamiques côtières. Les TP utilisent des jeux de données préparés sur PAK/Kribi et le littoral camerounais afin que les participants puissent travailler pendant l'école sans manipuler de fichiers lourds.
+Cette session introduit des approches pratiques pour suivre les processus côtiers et évaluer la vulnérabilité climatique au Bénin et dans le golfe de Guinée. Elle relie l'évolution du trait de côte, le transport sédimentaire, les inondations côtières, l'exposition aux surcotes, les échanges lagune-océan et les pressions humaines aux décisions que doivent prendre les scientifiques et gestionnaires du littoral.
 
-Les TP sont conçus comme des exercices d'aide à la décision. Le notebook de dynamique côtière demande aux participants de classer les priorités de suivi à partir de cinq facteurs: Shoreline, Surface Water Velocity, Tide, Wave et Wind. Le notebook de machine learning compare six algorithmes tout en discutant le risque de leakage et l'effet de la validation spatiale.
+Les notebooks de ce dossier servent de supports de démonstration et de prolongement pratique. Ils utilisent des jeux de données préparés sur PAK/Kribi et le littoral camerounais afin d'illustrer comment des observations de terrain, des produits satellites, des données historiques de trait de côte et des cas locaux peuvent être combinés pour identifier le changement côtier et communiquer la vulnérabilité.
+
+## Objectifs pédagogiques
+
+A la fin de la session, les participants doivent pouvoir:
+
+1. Décrire les principaux processus qui contrôlent le changement du trait de côte et les échanges lagune-océan dans le golfe de Guinée.
+2. Identifier les facteurs climatiques et humains qui augmentent la vulnérabilité côtière: érosion, inondation, exposition aux surcotes et pression d'occupation du sol.
+3. Choisir des indicateurs et sources de données adaptés au suivi du trait de côte et de l'exposition aux aléas.
+4. Interpréter un cas d'étude simple en distinguant changement physique, exposition, sensibilité et capacité d'adaptation.
+5. Proposer un plan de suivi de base reliant observations, produits de données et besoins de décision pour un site côtier vulnérable.
 
 ## Organisation
 
@@ -51,6 +61,8 @@ spatial_validation_reduced_predictors
 
 La sortie PAK attendue contient le nombre de transects en érosion/stabilité/accrétion et le secteur prioritaire selon trois scénarios de pondération.
 
+Pour la session orale d'une heure, ces notebooks ne sont pas obligatoires à exécuter en entier. Ils peuvent être utilisés comme démonstrations courtes, support de discussion, ou base de travail pour les activités de groupe après la session.
+
 ## Données
 
 Les notebooks utilisent ces petits fichiers locaux:
@@ -73,7 +85,7 @@ Les slides, handouts, cartes interactives HTML et gros fichiers de référence s
 
 ## Avant la session
 
-Les participants doivent créer l'environnement commun GGOSSS 2026 avant la séance:
+Les participants doivent créer l'environnement commun GGOSSS 2026 avant l'école, comme demandé dans le README racine du dépôt:
 
 ```bash
 conda env create -f environment.yml
@@ -81,7 +93,7 @@ conda activate ggosss2026
 jupyter lab
 ```
 
-Le TP utilise les packages déjà listés dans l'environnement du dépôt: `numpy`, `pandas`, `matplotlib`, `scikit-learn`, `cartopy`, `pyproj` et `jupyterlab`.
+La session orale ne nécessite pas de logiciel en direct. Les notebooks de démonstration utilisent les packages déjà listés dans l'environnement du dépôt: `numpy`, `pandas`, `matplotlib`, `scikit-learn`, `cartopy`, `pyproj` et `jupyterlab`.
 
 ## Lancer les notebooks
 
